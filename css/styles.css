@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --hijau: #04432a;
+    --coklat: #1d1716;
+    --black: #46322b;
+    --cream: #d9b650;
+    --putih: #dfd8c8;
+    --cokelate: #f5daac;
+}
+body {
+    /* min-height: 9000px; */
+    background-color: var(--cokelate);
+}
+nav {
+    background-color: #af9160;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 2%;
+    border-bottom: 1.5px solid black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+nav .logo img {
+    width: 2.5rem;
+    height: 2.3rem;
+    padding-bottom: 0.3rem;
+}
+nav .logo a {
+    gap: 0.3rem;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--cream);
+    font-family: MuseoModerno, sans-serif;
+}
+nav .logo h1 {
+    margin: 0.3rem;
+}
+.navigasi, .end {
+    display: flex;
+    font-size: 1.2rem;
+}
+nav a {
+    color: black;
+}
+.navigasi {
+    gap: 1.5rem;
+    font-family: Outfit, sans-serif;
+}
+.navigasi a {
+    color: black;
+}
+.end {
+    gap: 0.5rem;
+} 
+.end a {
+    font-size: 1.3rem;
+}
+#menu {
+    display: none;
+}
+.home {
+    min-height: 100vh;
+    min-width: 100%vw;
+    display: flex;
+    align-items: center;
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header {
+    padding: 0.5rem 2%;
+}
+.header h1 {
+    font-size: 4rem;
+    font-family: Francois One, sans-serif;
+    color: var(--putih);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline;
+}
+.header h1 .span-1 {
+    color: #957541;
+}
+.header h1 .span-2 {
+    color: var(--cream);
+}
+.header p {
+    font-size: 2rem;
+    color: var(--putih);
+    font-family: Reddit Sans Condensed, sans-serif;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline;
+}
+.header button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
+    background-color: var(--hijau);
+    margin-top: 1.7rem;
+}
+.header button a {
+    color: var(--putih);
+    font-family: Reddit Sans Condensed, sans-serif;
+    font-weight: 600;
+}
+.about,
+.menuu,
+.contact {
+    padding: 8rem 5% 0.8rem;
+}
+.about h1, 
+.menuu h1,
+.contact h1{
+    font-family: Tenor Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+.row-about {
+    display: flex;
+    gap: 1rem;
+}
+.about-img {
+    flex: 1 1 50rem;
+}
+.about-img img {
+    width: 100%;
+}
+.paragraf {
+    display: flex;
+    flex: 1 1 50rem;
+    line-height: 1.5;
+    gap: 1vw;
+    flex-direction: column;
+}
+.paragraf p {
+    font-size: 1.2rem;
+    font-family: Montserrat, sans-serif;
+}
+.paragraf .icons-about a {
+    font-size: 1.5vw;
+    color: #46322b;
+}
+.icons-about {
+    display: flex;
+    gap: 1rem;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gambar-produk {
+  background-color: rgba(0, 0, 0, 0.107); 
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 150px;
+  display: inline-block;
+}
+.gambar-produk h3, h4, .menu-btn {
+    font-family: Tenor Sans, sans-serif;
+}
+.gambar-produk img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.gambar-produk h3,
+.gambar-produk p {
+  margin: 10px 0 0;
+}
+.menu-btn {
+    margin-top: 0.5vw;
+    padding: 2px 15px;
+    border-radius: 5px;
+    background-color: #5c3c10;
+    color: #d9b650;
+    cursor: pointer;
+}
+.contact-rows {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+.maps {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .contact-rows form {
+    flex: 1 1 45rem;
+    padding: 4rem;
+    text-align: center;
+}
+.contact .contact-rows form .input-data {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    padding-left: 1rem;
+    border: 1.5px solid rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+}
+.contact .contact-rows form .input-data i {
+    color: rgba(0, 0, 0, 0.664);
+}
+.contact .contact-rows form .input-data input {
+    width: 100%;
+    padding: 0.65rem;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.contact .contact-rows form .input-data input::placeholder {
+    color: rgba(0, 0, 0, 0.664);
+}
+.contact .contact-rows form button {
+    margin-top: 1.5rem; 
+    background-color: transparent;
+}
+.contact .contact-rows form button a {
+    padding: 5px 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.664);
+}
+
+/* 404 not fund */
+.empat-kosong-empat {
+    background-color: white;
+    min-height: 100px;
+    padding: 20px;
+}
+.empat-kosong-empat, p, .btn-link {
+    font-size: 1.4rem;
+}
+.btn-link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.658);
+}
+.pe {
+    margin-bottom: 1rem;
+}
+.ha6 {
+    margin-top: 20px;
+}
+.ha6 span {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+footer {
+    background-color: #957541;
+    margin-top: 1rem;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+    display: flex;
+    border-top: 1.5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+footer .socialmedia a {
+    font-size: 1.4rem;
+    color: var(--black);
+}
+.navigasi-footer {
+    display: flex;
+    font-size: 1.2rem;
+    gap: 0.8rem;
+}
+.navigasi-footer a {
+    color: black;
+}
+.copyright p {
+    font-size: 1.2rem;
+}
+        /* responsive */
+    /* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 85%;
+    }
+    .gambar-produk {
+    flex: 1 1 30%;
+  }
+}
+    /* tablet */ 
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    #menu {
+        display: inline-block ;
+    }
+    .navigasi {
+        position: absolute;
+        width: 25rem;
+        height: 100vh;
+        background: var(--coklat);
+        top: 100%;
+        right: -100%;
+        transition: 0.4s;
+        display: block;
+    }
+    nav .navigasi.active {
+        right: 0;
+    }
+    .navigasi li {
+        display: flex;
+        margin: 3rem;
+        padding: 0.5rem 0;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .navigasi a {
+    color: var(--putih);
+}
+    .navigasi li:hover {
+        scale: 1.3;
+        box-shadow: 2px 0.1px 8px 0.2px rgba(0, 0, 0, 0.557);
+    }
+    .about .row-about {
+        flex-wrap: wrap;
+    }
+    .about-img img {
+        height: 35rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .paragraf p {
+    font-size: 1.3rem;
+    }
+    /* .icons-about a {
+        font-size: 2vw;
+    } */
+    .gambar-produk {
+    max-width: 120px;
+    }
+    /* .gambar-produk img {
+        width: 100%;
+    } */
+    .contact .contact-rows {
+        flex-wrap: wrap;
+    }
+    .contact .contact-rows .maps {
+        height: 30rem;
+    }
+    .contact .contact-rows form{
+        padding: 0 4rem 4rem 4rem;
+    }  
+}
+    /* mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 40%;
+    }
+    .gambar {
+        flex: 1 1 100%;
+    }
+    .contact .contact-rows form .input-data {
+        border-radius: 5px;
+    }
+     .contact .contact-rows form button {
+    margin-top: 2.5rem; 
+    } 
+}
+
+
+
+
+/* 404 */
